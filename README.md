@@ -5,7 +5,7 @@ The task for this project was to take an existing project ([forked from here](ht
 Source code is in the src folder. Production code, which includes a minified version of index.html, is in the dist folder.
 
 ## Getting Started
-To serve the website, clone the directory, navigate to the dist folder, and run a local server
+To serve the website: clone the directory, navigate to the dist folder, and run a local server
 ```sh
 $> cd /path/to/your-project-folder
 $> python -m SimpleHTTPServer 8080
