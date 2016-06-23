@@ -10,7 +10,7 @@ To serve the website, clone the directory, navigate to the dist folder, and run 
 $> cd /path/to/your-project-folder
 $> python -m SimpleHTTPServer 8080
 ```
-Then run ngrok to make the page remotely accesible
+Then run [ngrok](https://ngrok.com/) to make the page remotely accesible
 ```sh
 $> ./ngrok http 8080
 ```
