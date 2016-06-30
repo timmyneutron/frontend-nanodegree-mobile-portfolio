@@ -29,7 +29,7 @@ Click the "Cam's Pizzeria" link to navigate to the randomly generated pizzeria. 
 
 ##### The following changes were made to views/js/main.js to optimize animation for views/pizza.html:
 1. I used a switch statement to set the width of the randomly-generated pizzas, and then applied that width using a for loop and the style.width property (lines 427 - 450)
-2. I changed all references to document.querySelector() to document.getElementById() or document.getElementByClassName() to increase speed
+2. I changed all references to document.querySelector() to document.getElementById() or document.getElementByClassName()
 3. I calculated the number of background pizzas needed based on screen height, to avoid rendering and unnecessarily large number of background pizzas (line 536)
 4. I used the style.transform property to animate the pizzas and to avoid layout thrashing (line 508)
 5. I used requestAnimationFrame() to run updatePositions() for the background pizzas at the beginning of each animation frame (lines 524 - 526)
