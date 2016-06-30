@@ -18,7 +18,7 @@ Copy/paste the provided url into your browser to access the site remotely.
 ## Testing Download Speed
 The homepage will show the times to load and complete building the DOM in the lower right hand corner
 ## Testing Animation
-Click the "Cam's Pizzeria" link to navigate to the randomly generated pizzeria. Scroll up and down to test for smooth animation of the background pizzas. Adjust the size slider to change the size of the randomly generated pizzas.
+Click the "Cam's Pizzeria" link to navigate to the randomly generated pizzeria. Scroll up and down to test for smooth animation of the background pizzas. Adjust the size slider to change the size of the randomly generated pizzas. The console prints out the time it takes to animate 10 frames of the background pizzas, and the time it takes to change the size of the randomly-generated pizzas.
 ## Optimizations
 ##### The following changes were made to index.html optimize download speed:
 1. I shrunk the size of views/images/pizzeria.jpg to fit the size it appears as in the page
