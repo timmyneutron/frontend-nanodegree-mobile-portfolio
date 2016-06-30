@@ -406,13 +406,13 @@ var resizePizzas = function(size) {
   function changeSliderLabel(size) {
     switch(size) {
       case "1":
-        document.querySelector("#pizzaSize").innerHTML = "Small";
+        document.getElementById("pizzaSize").innerHTML = "Small";
         return;
       case "2":
-        document.querySelector("#pizzaSize").innerHTML = "Medium";
+        document.getElementById("pizzaSize").innerHTML = "Medium";
         return;
       case "3":
-        document.querySelector("#pizzaSize").innerHTML = "Large";
+        document.getElementById("pizzaSize").innerHTML = "Large";
         return;
       default:
         console.log("bug in changeSliderLabel");
@@ -441,7 +441,8 @@ var resizePizzas = function(size) {
       default:
         console.log("Lol I have no idea what I'm doing.");
     }
-    for (var i = 0; i < randomPizzaContainerArray.length; i++) {
+    randomPizzaContainerArrayLength = randomPizzaContainerArray.length;
+    for (var i = 0; i < randomPizzaContainerArrayLength; i++) {
       randomPizzaContainerArray[i].style.width = randomPizzaContainerWidth;
     }
   }
@@ -458,8 +459,8 @@ var resizePizzas = function(size) {
 window.performance.mark("mark_start_generating"); // collect timing data
 
 // This for-loop actually creates and appends all of the pizzas when the page loads
+var pizzasDiv = document.getElementById("randomPizzas");
 for (var i = 2; i < 100; i++) {
-  var pizzasDiv = document.getElementById("randomPizzas");
   pizzasDiv.appendChild(pizzaElementGenerator(i));
 }
 
@@ -488,17 +489,18 @@ function logAverageFrame(times) {   // times is the array of User Timing measure
 
 // Moves the sliding background pizzas based on scroll position
 
-// I took the reference to document.body.scrollTop out of the loop to avoid layout thrashing, 
+// I took the reference to document.body.scrollTop out of the loop to avoid layout thrashing,
 // and used transform to shift the pizzas instead of changing the left property
 
 function updatePositions() {
   frame++;
   window.performance.mark("mark_start_frame");
 
-  var items = document.querySelectorAll('.mover');
+  var items = document.getElementsByClassName("mover");
   var scrollTop = document.body.scrollTop;
   var phaseArray = [];
-  for (var i = 0; i < items.length; i++) {
+  var itemsLength = items.length;
+  for (var i = 0; i < itemsLength; i++) {
     phaseArray.push(100 * (Math.sin((scrollTop / 1250) + (i % 5))));
   }
 
@@ -530,16 +532,18 @@ window.addEventListener('scroll', animatePositions);
 document.addEventListener('DOMContentLoaded', function() {
   var cols = 8;
   var s = 256;
-  // there are only 40 moving pizzas on the screen, so that's all we need
-  for (var i = 0; i < 40; i++) {
-    var elem = document.createElement('img');
+  // calculate the number of pizzas you need based on the screen height
+  var numberOfBackgroundPizzas = Math.floor(window.screen.height / s) * cols;
+  var elem;
+  for (var i = 0; i < numberOfBackgroundPizzas; i++) {
+    elem = document.createElement('img');
     elem.className = 'mover';
     elem.src = "images/pizza.png";
     elem.style.height = "100px";
     elem.style.width = "73.333px";
     elem.style.left = (i % cols) * s + "px";
     elem.style.top = (Math.floor(i / cols) * s) + 'px';
-    document.querySelector("#movingPizzas1").appendChild(elem);
+    document.getElementById("movingPizzas1").appendChild(elem);
   }
   animatePositions();
 });
