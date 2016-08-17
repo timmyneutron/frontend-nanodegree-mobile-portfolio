@@ -8,7 +8,7 @@ This is a project for Udacity's Front-End Web Developer Nanodegree. The task for
 Concepts explored in this project:
 
   - The Critical Rendering Path
-  - Analyzing website performance using Chrome Dev Tools and ([PageSpeed Insights](https://developers.google.com/speed/pagespeed/insights/))
+  - Analyzing website performance using Chrome Dev Tools and [PageSpeed Insights](https://developers.google.com/speed/pagespeed/insights/)
   - Optimizing Javascript for animation
   - Identifying (and eliminating) performance bottlenecks
 
