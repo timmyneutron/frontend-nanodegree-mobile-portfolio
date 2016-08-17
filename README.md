@@ -4,7 +4,7 @@
 ### Introduction
 This is a project for Udacity's Front-End Web Developer Nanodegree. The task for this project was to take an existing project ([forked from here](https://github.com/udacity/frontend-nanodegree-mobile-portfolio)) and optimize it for download speed and smooth animation.
 
-### Concepts
+### Concepts and Classes
 Concepts explored in this project:
 
   - The Critical Rendering Path
