@@ -14,7 +14,8 @@ Concepts explored in this project include:
   - implementing search functionality
 
 Relevant Classes:
-  - [Udacity's Website Performance Optimization](https://www.udacity.com/course/website-performance-optimization--ud884)
+  - [Website Performance Optimization](https://www.udacity.com/course/website-performance-optimization--ud884)
+  - [Browser Rendering Optimization](https://www.udacity.com/course/browser-rendering-optimization--ud860)
 
 Source code is in the src folder. Production code, which includes a minified version of index.html, is in the dist folder.
 
