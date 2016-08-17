@@ -5,13 +5,12 @@
 This is a project for Udacity's Front-End Web Developer Nanodegree. The task for this project was to take an existing project ([forked from here](https://github.com/udacity/frontend-nanodegree-mobile-portfolio)) and optimize it for download speed and smooth animation.
 
 ### Concepts
-Concepts explored in this project include:
+Concepts explored in this project:
 
-  - Programming with separation of concerns
-  - Model-View-ViewModel frameworks (specifically Knockout.js)
-  - Utilizing APIs (Google Maps, Wikipedia, New York Times, and Zomato)
-  - Making AJAX requests
-  - implementing search functionality
+  - The Critical Rendering Path
+  - Analyzing website performance using Chrome Dev Tools and ([PageSpeed Insights](https://developers.google.com/speed/pagespeed/insights/))
+  - Optimizing Javascript for animation
+  - Identifying (and eliminating) performance bottlenecks
 
 Relevant Classes:
   - [Website Performance Optimization](https://www.udacity.com/course/website-performance-optimization--ud884)
