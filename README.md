@@ -18,7 +18,7 @@ Relevant Classes:
 
 Source code is in the src folder. Production code, which includes a minified version of index.html, is in the dist folder.
 
-## Getting Started
+### Getting Started
 To serve the website, clone the directory, navigate to the dist folder, and run a local server
 ```sh
 $> cd /path/to/your-project-folder
@@ -29,11 +29,11 @@ Then download [ngrok](https://ngrok.com/) to the dist folder and run it to make 
 $> ./ngrok http 8080
 ```
 Copy/paste the provided url into your browser to access the site remotely.
-## Testing Download Speed
+### Testing Download Speed
 The homepage will show the times to load and complete building the DOM in the lower right hand corner
-## Testing Animation
+### Testing Animation
 Click the "Cam's Pizzeria" link to navigate to the randomly generated pizzeria. Scroll up and down to test for smooth animation of the background pizzas. Adjust the size slider to change the size of the randomly generated pizzas. The console prints out the time it takes to animate 10 frames of the background pizzas, and the time it takes to change the size of the randomly-generated pizzas.
-## Optimizations
+### Optimizations
 ##### The following changes were made to index.html optimize download speed:
 1. I shrunk the size of views/images/pizzeria.jpg to fit the size it appears as in the page
 2. I inlined style.css (which is render-blocking) into index.html (lines 13 - 83)
