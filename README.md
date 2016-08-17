@@ -17,7 +17,7 @@ Relevant Classes:
   - [Browser Rendering Optimization](https://www.udacity.com/course/browser-rendering-optimization--ud860)
 
 ## Getting Started
-Source code is in the ```src``` folder. Production code, which includes a minified version of index.html, is in the dist folder.
+Source code is in the ```src``` folder. Production code, which includes a minified version of ```index.html```, is in the ```dist``` folder.
 
 Clone the directory, navigate to the dist folder, and run a local server:
 ```sh
