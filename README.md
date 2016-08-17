@@ -21,17 +21,17 @@ Relevant Classes:
 
 2) To view the final product: 
   - clone/download the directory
-  - navigate to the dist folder
+  - navigate to the ```dist``` folder
   - run a local server using:
 ```sh
 $> cd /path/to/your-project-folder
 $> python -m SimpleHTTPServer 8080
 ```
-Then download [ngrok](https://ngrok.com/) to the dist folder and run it to make the page remotely accesible
+  - download [ngrok](https://ngrok.com/) to the dist folder and run it to make the page remotely accesible
 ```sh
 $> ./ngrok http 8080
 ```
-Copy/paste the provided url into your browser to access the site remotely.
+  - copy/paste the provided url into your browser to access the site remotely.
 ## Testing Download Speed
 The homepage will show the times to load and complete building the DOM in the lower right hand corner
 ## Testing Animation
