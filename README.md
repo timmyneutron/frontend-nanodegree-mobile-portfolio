@@ -32,6 +32,7 @@ $> python -m SimpleHTTPServer 8080
 $> ./ngrok http 8080
 ```
   - copy/paste the provided url into your browser to access the site remotely.
+
 ## Testing Download Speed
 The homepage will show the times to load and complete building the DOM in the lower right hand corner
 ## Testing Animation
