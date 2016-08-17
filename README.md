@@ -1,7 +1,20 @@
 # Udacity Front-End Web Developer Nanodegree
 # Project #4: Mobile Portfolio (Performance Optimization)
 
-The task for this project was to take an existing project ([forked from here](https://github.com/udacity/frontend-nanodegree-mobile-portfolio)) and optimize it for download speed and smooth animation.
+### Introduction
+This is a project for Udacity's Front-End Web Developer Nanodegree. The task for this project was to take an existing project ([forked from here](https://github.com/udacity/frontend-nanodegree-mobile-portfolio)) and optimize it for download speed and smooth animation.
+
+### Concepts
+Concepts explored in this project include:
+
+  - Programming with separation of concerns
+  - Model-View-ViewModel frameworks (specifically Knockout.js)
+  - Utilizing APIs (Google Maps, Wikipedia, New York Times, and Zomato)
+  - Making AJAX requests
+  - implementing search functionality
+
+Relevant Classes:
+  - [Website Performance Optimization](https://www.udacity.com/course/website-performance-optimization--ud884)
 
 Source code is in the src folder. Production code, which includes a minified version of index.html, is in the dist folder.
 
