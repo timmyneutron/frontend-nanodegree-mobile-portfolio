@@ -17,9 +17,12 @@ Relevant Classes:
   - [Browser Rendering Optimization](https://www.udacity.com/course/browser-rendering-optimization--ud860)
 
 ## Getting Started
-Source code is in the ```src``` folder. Production code, which includes a minified version of ```index.html```, is in the ```dist``` folder.
+1) To inspect the source code, go to the ```src``` folder.
 
-Clone the directory, navigate to the dist folder, and run a local server:
+2) To view the final product: 
+  - clone/download the directory
+  - navigate to the dist folder
+  - run a local server using:
 ```sh
 $> cd /path/to/your-project-folder
 $> python -m SimpleHTTPServer 8080
